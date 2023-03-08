@@ -7,7 +7,7 @@
 - Controller→入力に対する処理 & Modelにに処理を依頼し、その結果をViewに反映させる責務  
 = ModelとViewの橋渡し 
 
-※ [MVVMとの違い](https://github.com/reeen-git/MVVM_Practice/blob/main/README.md)
+※ [MVVMとの違い](https://github.com/reeen-git/MVVM_Practice#mvc%E3%81%A8%E3%81%AE%E9%81%95%E3%81%84)
 __________________
 ### メリット
 - 役割ごとに独立しており、作業区分も明確化されているため、並列開発ができる開発効率が向上し、保守性も高められます
