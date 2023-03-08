@@ -10,13 +10,4 @@ import Foundation
 struct Person {
     let firstName: String
     let lastName: String
-    let gender: String
-    let age: Int
-    let weight: Double
-    let height: Double
-    let location: Location
-}
-
-struct Location {
-    let city: String
 }

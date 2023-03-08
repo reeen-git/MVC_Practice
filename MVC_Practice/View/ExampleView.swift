@@ -11,12 +11,15 @@ class ExampleView: UIView {
     private let label: UILabel = {
        let label = UILabel()
         label.textAlignment = .center
+        label.backgroundColor = .black
+        label.textColor = .white
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .red
+        addSubview(label)
     }
     
     required init?(coder: NSCoder) {
@@ -25,7 +28,10 @@ class ExampleView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        label.frame = CGRect(x: 0, y: 0, width: frame.size.width - 20, height: frame.size.height - 20)
-        
+        label.frame = CGRect(x: 10, y: 10, width: frame.size.width - 20, height: frame.size.height - 20)
+    }
+    
+    public func configure(with name: String) {
+        label.text = name
     }
 }
